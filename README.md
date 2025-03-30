@@ -1,4 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kişisel Web Sitem
+
+Next.js ile geliştirilmiş kişisel web sitem. Modern ve responsive tasarıma sahip bu web sitesi, kendimi ve çalışmalarımı sergilemek için oluşturulmuştur.
+
+## Özellikler
+
+- Modern ve responsive tasarım
+- Ana sayfa
+- Hakkımda sayfası
+- Dark mode desteği
+- SEO optimizasyonu
+
+## Teknolojiler
+
+- Next.js 15.2.2
+- React
+- Tailwind CSS
+- TypeScript
+
+## Kurulum
+
+```bash
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
+
+# Tarayıcınızda http://localhost:3000 adresini açın
+```
+
+## Lisans
+
+MIT
 
 ## Getting Started
 
