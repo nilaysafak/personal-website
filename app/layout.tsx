@@ -28,73 +28,66 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <header className="bg-gray-800 text-white p-4">
+        <nav className="bg-gray-800 text-white p-4">
           <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-xl font-bold">Kişisel Web Sitem</h1>
-            <nav>
-              <ul className="flex space-x-4">
-                <li>
-                  <Link href="/" className="hover:text-gray-300">Ana Sayfa</Link>
-                </li>
-                <li>
-                  <Link href="/hakkimda" className="hover:text-gray-300">Hakkımda</Link>
-                </li>
-              </ul>
-            </nav>
+            <div className="text-xl font-bold">Nilay Şafak</div>
+            <ul className="flex space-x-4">
+              <li>
+                <Link href="/" className="hover:text-gray-300">Ana Sayfa</Link>
+              </li>
+              <li>
+                <Link href="/hakkimda" className="hover:text-gray-300">Hakkımda</Link>
+              </li>
+            </ul>
           </div>
-        </header>
+        </nav>
         <main className="container mx-auto p-4 flex-grow">
           {children}
         </main>
-        <footer className="bg-gray-800 text-white mt-auto">
-          <div className="container mx-auto py-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer className="bg-gray-800 text-white py-8 mt-12">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-lg font-semibold mb-4">Hakkımda</h3>
-                <p className="text-gray-300 text-sm">
-                  Modern web teknolojileri konusunda uzmanlaşmış, yenilikçi çözümler üreten bir yazılım geliştiricisi.
+                <h3 className="text-xl font-semibold mb-4">Hakkımda</h3>
+                <p className="text-gray-300">
+                  Full Stack Developer olarak modern web teknolojileri ile çalışıyorum.
+                  Yenilikçi ve kullanıcı dostu web uygulamaları geliştirmeye odaklanıyorum.
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-4">Hızlı Bağlantılar</h3>
-                <ul className="space-y-2 text-gray-300 text-sm">
-                  <li><Link href="/" className="hover:text-white">Ana Sayfa</Link></li>
-                  <li><Link href="/projelerim" className="hover:text-white">Projelerim</Link></li>
-                  <li><Link href="/hakkimda" className="hover:text-white">Hakkımda</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Teknolojiler</h3>
-                <ul className="space-y-2 text-gray-300 text-sm">
-                  <li>React & Next.js</li>
-                  <li>TypeScript</li>
-                  <li>Node.js</li>
-                  <li>Tailwind CSS</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">İletişim</h3>
-                <ul className="space-y-2 text-gray-300 text-sm">
+                <h3 className="text-xl font-semibold mb-4">Hızlı Bağlantılar</h3>
+                <ul className="space-y-2">
                   <li>
-                    <a href="mailto:contact@example.com" className="hover:text-white">
-                      contact@example.com
+                    <Link href="/" className="text-gray-300 hover:text-white">Ana Sayfa</Link>
+                  </li>
+                  <li>
+                    <Link href="/hakkimda" className="text-gray-300 hover:text-white">Hakkımda</Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-4">İletişim</h3>
+                <ul className="space-y-2">
+                  <li className="text-gray-300">
+                    <a href="mailto:nilaysafak9@gmail.com" className="hover:text-white">
+                      nilaysafak9@gmail.com
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    <a href="https://github.com/nilaysafak" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                       GitHub
                     </a>
                   </li>
                   <li>
-                    <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    <a href="https://linkedin.com/in/nilay-safak" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                       LinkedIn
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-300">
-              <p>&copy; {new Date().getFullYear()} Kişisel Web Sitem. Tüm hakları saklıdır.</p>
+            <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
+              <p>&copy; {new Date().getFullYear()} Nilay Şafak. Tüm hakları saklıdır.</p>
             </div>
           </div>
         </footer>
